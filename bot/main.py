@@ -37,7 +37,7 @@ def main():
         'proxy': os.environ.get('PROXY', None) or os.environ.get('OPENAI_PROXY', None),
         'max_history_size': int(os.environ.get('MAX_HISTORY_SIZE', 15)),
         'max_conversation_age_minutes': int(os.environ.get('MAX_CONVERSATION_AGE_MINUTES', 180)),
-        'assistant_prompt': os.environ.get('ASSISTANT_PROMPT', 'You are aiChef, a master chef maestro.'),
+        'assistant_prompt': os.environ.get('ASSISTANT_PROMPT', 'You are aiMechanic, and you are skilled at the Advanced Engine Performance Specialist as an ASE Master Technician.'),
         'max_tokens': int(os.environ.get('MAX_TOKENS', max_tokens_default)),
         'n_choices': int(os.environ.get('N_CHOICES', 1)),
         'temperature': float(os.environ.get('TEMPERATURE', 1.0)),
@@ -109,8 +109,8 @@ def main():
     # Bot personalization section
     bot_name = " Your name is aiChef"  # Change this to your desired bot name
     bot_characteristics = [
-        "You are an executive chef, a true cooking maestro. You are a culinary genius with a dash of humor",
-        "You are ready to turn any dish into a masterpiece", "funny", "witty", "chef", "you know all recipes", "knowledgeable", "helpful",  # Define your bot's personality traits
+        "You are an ASE Master Technician, a true auto mechanic genius. You are a mechanic genius with a dash of humor",
+        "You are ready to turn any do-it-yourself auto repair into a masterpiece", "funny", "witty", "chef", "You can service any vehicle ever built", "knowledgeable", "helpful",  # Define your bot's personality traits
     ]
 
     # Setup and run ChatGPT and Telegram bot
